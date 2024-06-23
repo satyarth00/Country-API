@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <script>
+        function loadContent() {
+            fetch('country.html')
+                .then(res => res.json())
+                .then(data => {
+                    document.getElementsByClassName('container').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading content:', error));
+        }
+    </script>
+
+
+    
+    <title>Countries</title>
+</head>
+<body>
+    <header class="header">
+    <div class="div1">
+    <h1 class="heading1"><a href="/">where is the world?</a></h1>
+    </div>
+    <div class="div2">
+        <img class="img1" src="moon-outline.svg" alt="">
+        <p class="dark">Dark mode</p> 
+    </div>
+    
+</header>
+
+<div class="main">
+
+    <div class="div3">
+        <button><img class="img2" src="icons8-search.svg" alt=""></button>
+        <input type="text" placeholder="search for a country...">
+     </div>
+      
+        <select name="region" class="select">
+            <option value="Filter">Filter by Region</option>
+            <option value="Africa">Africa</option>
+            <option value="America">America</option>
+            <option value="Europe">Europe</option>
+            <option value="Asia">Asia</option>
+            <option value="Oceania">Oceania</option>
+        </select>
+    
+</div>
+
+<section class="container"> 
+    
+        <a href="country.html" class="container1"></a>
+            <!-- <img class="image" src="https://flagcdn.com/de.svg" alt="">
+            <div class="content">
+            <h3>Germany</h3>
+                <p><b>Population:</b> 81,770,900</p>
+                <p><b>Region:</b> Europe</p>
+                <p><b>Capital:</b> Berlin</p>
+            </div> -->
+     
+        
+        <!-- <div class="container1">
+            <img class="image" src="https://flagcdn.com/us.svg" alt="">
+            <div class="content">
+            <h3>United States of America</h3>
+                <p>Population: 323,947,000</p>
+                <p>Region: Americas</p>
+                <p>Capital: Washington,D.C.</p>
+                </div>
+        </div>
+        <div class="container1">
+            <img class="image" src="https://flagcdn.com/br.svg" alt="">
+            <div class="content">
+            <h3>Brazil</h3>
+                <p>Population: 206,135,900</p>
+                <p>Region: Americas</p>
+                <p>Capital: Brasilia</p>
+                </div>
+        </div>
+        <div class="container1" >
+            <img class="image" src="https://flagcdn.com/is.svg" alt="">
+            <div class="content">
+            <h3>Iceland</h3>
+                <p>Population: 334,300</p>
+                <p>Region: Europe</p>
+                <p>Capital: Reykjavik</p>
+                </div>
+        </div>
+        <div class="container1">
+            <img class="image" src="https://flagcdn.com/mw.svg" alt="">
+            <div class="content">
+                <h1>Malawi</h1>
+                    <p><b>Population:</b> 27,657,145</p>
+                    <p><b>Region:</b>Africa</p>
+                    <p><b>Capital:</b>Lilongwe</p>
+            </div>
+        </div>
+    
+        <div class="container1">
+            <img class="image" src="https://flagcdn.com/ax.svg" alt="">
+            <div class="content">
+                <h1>Aland Island</h1>
+                    <p><b>Population:</b> 28,875</p>
+                    <p><b>Region:</b>Europe</p>
+                    <p><b>Capital:</b> Meriehemn</p>
+            </div>
+        </div>
+        <div class="container1">
+            <img class="image" src="https://flagcdn.com/al.svg" alt="">
+            <div class="content">
+                <h1>Albania</h1>
+                    <p><b>Population:</b> 2,886,026</p>
+                    <p><b>Region:</b>Europe</p>
+                    <p><b>Capital:</b> Tirana</p>
+            </div>
+        </div>
+        <div class="container1">
+            <img class="image" src="https://flagcdn.com/dz.svg" alt="">
+            <div class="content">
+                <h1>Iceland</h1>
+                    <p><b>Population:</b> 40,400,000</p>
+                    <p><b>Region:</b>Africa</p>
+                    <p><b>Capital:</b> Algeries</p>
+            </div>
+        </div> -->
+    </section>
+
+</body>
+</html>
