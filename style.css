@@ -81,6 +81,7 @@ cursor: pointer;
     outline: none;
     background-color: var(--elements-color);
    color: var(--color);
+   width: 100%;
 }
 input{
     border: 0px solid;
@@ -153,7 +154,7 @@ button{
      margin-right:3px ;
     }
     .div3{
-        width: 66%;
+        width: 61%;
         margin-left: -48px;
     }
   .div3 input::placeholder{
@@ -172,7 +173,7 @@ button{
 }
 @media only screen and (max-width: 382px){
     .div3{
-        width: 82%;
+        width: 83%;
     }
     .div3 input::placeholder{
         font-size: 12px;
